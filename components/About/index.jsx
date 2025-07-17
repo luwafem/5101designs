@@ -122,7 +122,7 @@ export default function ServicesSection() {
       services: [
         {
           icon: "✦",
-          title: "Web Development",
+          title: "Web and Mobile Development",
           description: "Expertise in front-end and back-end development for dynamic and responsive web applications.",
           longDescription: "Our web development services cover the full spectrum, from crafting engaging front-end experiences to building robust and secure back-end systems. We specialize in modern frameworks and technologies to deliver scalable, high-performance, and responsive web applications tailored to your specific business needs. Whether it's a corporate website, a complex web application, or a custom CMS, we ensure a seamless and efficient development process.",
           details: [
