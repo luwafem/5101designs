@@ -93,7 +93,7 @@ const Hero = ({
               custom={0}
               variants={fadeUp}
             >
-              Design clarity for <br /> fast-moving companies
+              Design clarity for <br /> fast moving companies
             </motion.h1>
 
             <motion.p
