@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white-100/30 backdrop-blur-sm border-b border-blue-300/50"> {/* Updated background and border */}
+    <header className="fixed top-0 w-full z-50 bg-white-100/30 backdrop-blur-sm border-b border-blue-300/20"> {/* Updated background and border */}
       <nav className="max-w-7xl mx-auto flex items-center justify-between py-6 px-6 md:px-12">
 
         {/* Left nav (desktop only) */}
@@ -18,7 +18,7 @@ const Header = () => {
 
         {/* Center logo */}
         <div className="flex-shrink-0">
-          <Link href="#" className="text-3xl font-extrabold  text-gray-800 drop-shadow-sm"> {/* Updated text color and shadow */}
+          <Link href="#" className="text-3xl font-extrabold text-gray-800 drop-shadow-sm"> {/* Updated text color and shadow */}
             5101DESIGNS
           </Link>
         </div>
