@@ -18,7 +18,7 @@ const Header = () => {
 
         {/* Center logo */}
         <div className="flex-shrink-0">
-          <Link href="#" className="text-3xl font-extrabold text-gray-800 drop-shadow-sm"> {/* Updated text color and shadow */}
+          <Link href="#" className="text-3xl font-extrabold text-gray-800 drop-shadow-sm text-white/80 [text-shadow:_3px_3px_8px_#333]"> {/* Updated text color and shadow */}
             5101DESIGNS
           </Link>
         </div>

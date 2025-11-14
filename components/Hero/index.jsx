@@ -80,7 +80,7 @@ const Hero = ({
       </video>
 
       {/* Consistent Glassmorphic Overlay */}
-      <div className="absolute inset-0 bg-white bg-opacity-70 z-10" />
+      <div className="absolute inset-0 bg-gray bg-opacity-70 z-10" />
       {/* Subtle gradient at the bottom for smooth transition */}
       <div className="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-white/90 to-transparent z-10" />
 
@@ -89,7 +89,7 @@ const Hero = ({
         <div className="grid md:grid-cols-2 gap-12 mx-auto mr-1">
           <motion.div initial="hidden" animate="visible" variants={fadeUp}>
             <motion.h1
-              className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-sm text-gray-800"
+              className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-sm text-gray-700  [text-shadow:_2px_2px_26px_#FFF]"
               custom={0}
               variants={fadeUp}
             >
@@ -97,17 +97,17 @@ const Hero = ({
             </motion.h1>
 
             <motion.p
-              className="text-lg md:text-2xl max-w-3xl text-gray-700 mb-6 drop-shadow-sm"
+              className="text-lg md:text-2xl max-w-3xl font-extrabold text-gray-700 mb-6 drop-shadow-sm [text-shadow:_1px_1px_26px_#FFF]"
               custom={1}
               variants={fadeUp}
             >
-              Area5101 is a bold, independent design agency helping ambitious
+              5101DESIGNS is a bold, independent design agency helping ambitious
               startups and VC-backed companies build powerful brand presence and
               accelerate product-market fit beautifully.
             </motion.p>
 
             <motion.p
-              className="italic text-gray-600 max-w-xl mb-10 drop-shadow-sm"
+              className="italic text-gray-600 font-bold max-w-xl mb-10 drop-shadow-sm [text-shadow:_1px_1px_3px_#FFF]"
               custom={2}
               variants={fadeUp}
             >
@@ -128,10 +128,10 @@ const Hero = ({
                   custom={3 + i}
                   variants={fadeUp}
                 >
-                  <div className="text-2xl font-bold text-blue-600">
+                  <div className="text-2xl font-extrabold text-blue-600">
                     <CountUp end={value} duration={2} />+
                   </div>
-                  <div className="text-sm text-gray-700">{label}</div>
+                  <div className="text-sm font-extrabold text-gray-700">{label}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -143,13 +143,13 @@ const Hero = ({
             >
               <button
                 onClick={() => setIsOpen(true)}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-lg border border-blue-300 bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold py-3 px-8 rounded-lg border border-blue-300 bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-lg"
               >
                 Watch Demo
               </button>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 text-blue-500 font-semibold py-3 px-8 rounded-lg border border-blue-500 hover:bg-blue-500/80 hover:text-white transition-all duration-300 shadow-md"
+                className="inline-flex items-center justify-center gap-2 text-blue-500 font-extrabold py-3 px-8 rounded-lg border border-blue-500 hover:bg-blue-500/80 hover:text-white transition-all duration-300 shadow-md"
               >
                 Contact Us
               </a>
@@ -158,7 +158,7 @@ const Hero = ({
 
           <motion.form
             onSubmit={handleSubmit}
-            className="bg-white/20 backdrop-blur-sm p-8 md:p-10 rounded-xl mx-auto w-full max-w-md shadow-lg space-y-5 border border-blue-300/20"
+            className="bg-white/40 backdrop-blur-sm p-8 md:p-10 rounded-xl mx-auto w-full max-w-md shadow-lg space-y-5 border border-blue-300/20"
             initial="hidden"
             animate="visible"
             variants={fadeUp}
@@ -166,14 +166,14 @@ const Hero = ({
             action="https://formspree.io/f/mldleoga"
             method="POST"
           >
-            <h3 className="text-gray-800 text-xl font-semibold mb-6 text-center drop-shadow-sm">Book a Meeting or an Audit</h3>
+            <h3 className="text-gray-800 text-xl font-extrabold mb-6 text-center drop-shadow-sm">Book a Meeting or an Audit</h3>
             {formSubmitted && (
-              <p className="text-green-600 text-sm mb-4 text-center drop-shadow-sm">
+              <p className="text-gray-800 text-sm mb-4 text-center drop-shadow-sm">
                 Thank you! Your message has been sent.
               </p>
             )}
             {submissionError && (
-              <p className="text-red-500 text-sm mb-4 text-center drop-shadow-sm">
+              <p className="text-gray-800 text-sm mb-4 text-center drop-shadow-sm">
                 There was an error submitting your form. Please try again.
               </p>
             )}
@@ -207,7 +207,7 @@ const Hero = ({
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-lg bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-md"
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold py-3 px-8 rounded-lg bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-md"
               >
                 Submit
               </button>
