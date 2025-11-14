@@ -86,9 +86,8 @@ function Footer() {
               className="flex flex-col items-center md:items-start text-center md:text-left"
             >
               <h4 className="text-xl font-semibold text-gray-800 mb-4 drop-shadow-sm">Contact Us</h4> {/* Consistent heading color and shadow */}
-              <p className="text-gray-700 text-base mb-2 drop-shadow-sm">Innovation City, 90210</p> {/* Consistent text color and shadow */}
-              <p className="text-gray-700 text-base mb-2 drop-shadow-sm">Email: info@5101DESIGNS.com</p>
-              <p className="text-gray-700 text-base drop-shadow-sm">Phone: +1 (555) 123-4567</p>
+              <p className="text-gray-700 text-base mb-2 drop-shadow-sm">Email: info@5101designs.com</p>
+              <p className="text-gray-700 text-base drop-shadow-sm">Phone: +250793165246</p>
             </motion.div>
         </div>
       </div>
