@@ -217,7 +217,7 @@ export default function TestimonialsSection() {
                     <img
                       src={testimonials[prevTestimonialIndex].image}
                       alt={testimonials[prevTestimonialIndex].name}
-                      className="w-12 h-12 rounded-full mb-2 border border-blue-500/20 shadow-sm" // Consistent image border/shadow
+                      className="w-12 h-12 rounded-lg mb-2 border border-blue-500/20 shadow-sm" // Consistent image border/shadow
                       onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/48x48/BBBBBB/444444?text=User"; }}
                     />
                     <p className="font-semibold text-gray-800 text-base">{testimonials[prevTestimonialIndex].name}</p>
@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
                   <img
                     src={testimonials[currentTestimonialIndex].image}
                     alt={testimonials[currentTestimonialIndex].name}
-                    className="w-16 h-16 rounded-full mb-4 border border-blue-500/20 shadow-md" // Consistent image border/shadow
+                    className="w-16 h-16 rounded-lg mb-4 border border-blue-500/20 shadow-md" // Consistent image border/shadow
                     onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/64x64/BBBBBB/444444?text=User"; }}
                   />
                   <div>
@@ -279,7 +279,7 @@ export default function TestimonialsSection() {
                     <img
                       src={testimonials[nextTestimonialIndex].image}
                       alt={testimonials[nextTestimonialIndex].name}
-                      className="w-12 h-12 rounded-full mb-2 border border-blue-500/20 shadow-sm" // Consistent image border/shadow
+                      className="w-12 h-12 rounded-lg mb-2 border border-blue-500/20 shadow-sm" // Consistent image border/shadow
                       onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/48x48/BBBBBB/444444?text=User"; }}
                     />
                     <p className="font-semibold text-gray-800 text-base">{testimonials[nextTestimonialIndex].name}</p>
@@ -294,7 +294,7 @@ export default function TestimonialsSection() {
           {/* Navigation Buttons (Outside AnimatePresence for persistence) */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 md:-left-16 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-full shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent blue tones and hover
+            className="absolute left-0 md:-left-16 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-lg shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent blue tones and hover
             aria-label="Previous testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -303,7 +303,7 @@ export default function TestimonialsSection() {
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-0 md:-right-16 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-full shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent blue tones and hover
+            className="absolute right-0 md:-right-16 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-lg shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent blue tones and hover
             aria-label="Next testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

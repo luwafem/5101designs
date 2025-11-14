@@ -124,7 +124,7 @@ const Hero = ({
               { label: "Awards Won", value: 5 }].map(({ label, value }, i) => (
                 <motion.div
                   key={label}
-                  className="bg-white/40 backdrop-blur-md rounded-lg px-4 py-2 font-semibold text-sm md:text-base text-center border border-white/70 shadow-md"
+                  className="bg-white/40 backdrop-blur-md rounded-lg px-4 py-2 font-semibold text-sm md:text-base text-center border border-blue-300/50 shadow-md"
                   custom={3 + i}
                   variants={fadeUp}
                 >
@@ -143,13 +143,13 @@ const Hero = ({
             >
               <button
                 onClick={() => setIsOpen(true)}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-full border border-blue-300 bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-lg border border-blue-300 bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-lg"
               >
                 Watch Demo
               </button>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 text-blue-500 font-semibold py-3 px-8 rounded-full border border-blue-500 hover:bg-blue-500/80 hover:text-white transition-all duration-300 shadow-md"
+                className="inline-flex items-center justify-center gap-2 text-blue-500 font-semibold py-3 px-8 rounded-lg border border-blue-500 hover:bg-blue-500/80 hover:text-white transition-all duration-300 shadow-md"
               >
                 Contact Us
               </a>
@@ -158,7 +158,7 @@ const Hero = ({
 
           <motion.form
             onSubmit={handleSubmit}
-            className="bg-white/40 backdrop-blur-md p-8 md:p-10 rounded-xl mx-auto w-full max-w-md shadow-lg space-y-5 border border-white/70"
+            className="bg-white/20 backdrop-blur-sm p-8 md:p-10 rounded-xl mx-auto w-full max-w-md shadow-lg space-y-5 border border-blue-300/50"
             initial="hidden"
             animate="visible"
             variants={fadeUp}
@@ -184,7 +184,7 @@ const Hero = ({
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border border-transparent hover:border-blue-300/50 transition-colors"
+                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border  border-blue-300/50 hover:border-blue-300/50 transition-colors"
                 required
               />
               <input
@@ -193,7 +193,7 @@ const Hero = ({
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border border-transparent hover:border-blue-300/50 transition-colors"
+                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border border-blue-300/50 hover:border-blue-300/50 transition-colors"
                 required
               />
               <textarea
@@ -202,12 +202,12 @@ const Hero = ({
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border border-transparent hover:border-blue-300/50 transition-colors"
+                className="px-4 py-3 rounded-md bg-white/20 placeholder-gray-600 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500/80 border border-blue-300/50 hover:border-blue-300/50 transition-colors"
                 required
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-full bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-md"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-lg bg-blue-500/80 hover:bg-blue-600/90 transition-all duration-300 shadow-md"
               >
                 Submit
               </button>

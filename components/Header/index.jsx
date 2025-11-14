@@ -7,46 +7,25 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-blue-100/30 backdrop-blur-lg border-b border-white/70"> {/* Updated background and border */}
+    <header className="fixed top-0 w-full z-50 bg-white-100/30 backdrop-blur-sm border-b border-blue-300/50"> {/* Updated background and border */}
       <nav className="max-w-7xl mx-auto flex items-center justify-between py-6 px-6 md:px-12">
 
         {/* Left nav (desktop only) */}
         <div className="hidden md:flex gap-6">
-          <a
-            href="#features"
-            className="text-gray-800 px-4 py-1 rounded hover:bg-white/50 transition duration-300 drop-shadow-sm" // Updated text color, hover, and shadow
-          >
-            Services
-          </a>
-          <a
-            href="#pricing"
-            className="text-gray-800 px-4 py-1 rounded hover:bg-white/50 transition duration-300 drop-shadow-sm" // Updated text color, hover, and shadow
-          >
-            Designs
-          </a>
+          
+         
         </div>
 
         {/* Center logo */}
         <div className="flex-shrink-0">
-          <Link href="#" className="text-3xl font-extrabold text-gray-800 drop-shadow-sm"> {/* Updated text color and shadow */}
+          <Link href="#" className="text-3xl font-extrabold  text-gray-800 drop-shadow-sm"> {/* Updated text color and shadow */}
             5101DESIGNS
           </Link>
         </div>
 
         {/* Right nav (desktop only) */}
         <div className="hidden md:flex gap-6">
-          <a
-            href="#about"
-            className="text-gray-800 px-4 py-1 rounded hover:bg-white/50 transition duration-300 drop-shadow-sm" // Updated text color, hover, and shadow
-          >
-            Testimonials
-          </a>
-          <a
-            href="#"
-            className="text-gray-800 px-4 py-1 rounded hover:bg-white/50 transition duration-300 drop-shadow-sm" // Updated text color, hover, and shadow
-          >
-            Contact
-          </a>
+          
         </div>
 
         {/* Hamburger (mobile only) */}

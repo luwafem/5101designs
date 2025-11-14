@@ -93,7 +93,7 @@ export default function ProcessSection() {
                 variants={pulseVariants}
                 initial="initial"
                 animate="pulse"
-                className="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center mb-6 shadow-md" // bg-blue-500 for consistency with buttons
+                className="w-16 h-16 rounded-lg bg-blue-500 flex items-center justify-center mb-6 shadow-md" // bg-blue-500 for consistency with buttons
               >
                 <span className="text-white text-3xl font-extrabold">{idx + 1}</span>
               </motion.div>
@@ -130,7 +130,7 @@ export default function ProcessSection() {
                 variants={pulseVariants}
                 initial="initial"
                 animate="pulse"
-                className="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center mb-6 shadow-md" // bg-blue-500 for consistency
+                className="w-16 h-16 rounded-lg bg-blue-500 flex items-center justify-center mb-6 shadow-md" // bg-blue-500 for consistency
               >
                 <span className="text-white text-3xl font-extrabold">{idx + 4}</span> {/* Corrected number for bottom row */}
               </motion.div>

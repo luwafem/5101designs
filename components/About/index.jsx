@@ -24,19 +24,7 @@ const ServiceCard = ({ service, serviceIndex, onLearnMoreClick }) => { // Added 
         minHeight: '350px' // Ensures all cards have a consistent height in the grid
       }}
     >
-      {/* Icon Circle - Neutral and Pulsating Effect */}
-      <motion.div
-        className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-5 shadow-sm"
-        // Pulsating animation for the icon circle
-        initial={{ scale: 1 }}
-        animate={{ scale: [1, 1.05, 1] }}
-        transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, repeatType: "loop", delay: serviceIndex * 0.2 }}
-      >
-        <span className="text-gray-800 text-2xl font-bold" aria-hidden="true">{icon}</span>
-        {/* For screen readers, consider adding a visually hidden span if the icon conveys specific meaning beyond the title:
-            <span className="sr-only">{title} icon</span>
-        */}
-      </motion.div>
+      
 
       {/* Service Title and Description */}
       <div className="flex-grow flex flex-col justify-center items-center">
@@ -51,7 +39,7 @@ const ServiceCard = ({ service, serviceIndex, onLearnMoreClick }) => { // Added 
       {/* Call to Action Button - now triggers the modal */}
       <button
         onClick={() => onLearnMoreClick(service)} // Call the prop function with the service data
-        className="mt-6 inline-flex items-center justify-center gap-2 text-white font-semibold py-2 px-6 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-300 shadow-md"
+        className="mt-6 inline-flex items-center justify-center gap-2 text-white font-semibold py-2 px-6 rounded-lg bg-blue-500 hover:bg-blue-600 transition-all duration-300 shadow-md"
       >
         Learn More
         {/* SVG for arrow icon with hover translation */}
@@ -75,7 +63,7 @@ export default function ServicesSection() {
       categoryDescription: "Crafting visually stunning and user-centric interfaces.",
       services: [
         {
-          icon: "+",
+         
           title: "UI/UX Design",
           description: "From concept to pixel-perfect execution, ensuring intuitive and delightful user journeys.",
           longDescription: "Our UI/UX design process focuses on creating intuitive, efficient, and aesthetically pleasing interfaces. We conduct thorough user research, create wireframes and prototypes, and perform usability testing to ensure a seamless and delightful user experience. Our goal is to craft designs that are not just beautiful, but also highly functional and aligned with your business objectives. We specialize in mobile-first design, accessibility, and modern design patterns.",
@@ -89,7 +77,7 @@ export default function ServicesSection() {
           ]
         },
         {
-          icon: "✨",
+          
           title: "Motion Graphics",
           description: "Bringing your brand and products to life with dynamic animations.",
           longDescription: "Motion graphics add a layer of dynamism and engagement to your digital presence. Whether it's animated logos, explainer videos, or interactive UI animations, we create captivating visual stories that enhance user experience and convey complex ideas simply. Our expertise spans various animation techniques and software, ensuring high-quality, impactful results that resonate with your audience.",
@@ -102,7 +90,7 @@ export default function ServicesSection() {
           ]
         },
         {
-          icon: "⚡",
+          
           title: "Branding & Identity",
           description: "Developing powerful brand narratives and cohesive visual identities.",
           longDescription: "A strong brand identity is the cornerstone of effective communication. We help you define your brand's core values, mission, and unique selling proposition, translating them into a cohesive visual language. From logo design and color palettes to typography and brand guidelines, we ensure every element reflects your brand's essence and connects meaningfully with your target audience.",
@@ -121,7 +109,7 @@ export default function ServicesSection() {
       categoryDescription: "Building robust, scalable, and high-performance digital solutions.",
       services: [
         {
-          icon: "✦",
+          
           title: "Web and Mobile Development",
           description: "Expertise in front-end and back-end development for dynamic and responsive web applications.",
           longDescription: "Our web development services cover the full spectrum, from crafting engaging front-end experiences to building robust and secure back-end systems. We specialize in modern frameworks and technologies to deliver scalable, high-performance, and responsive web applications tailored to your specific business needs. Whether it's a corporate website, a complex web application, or a custom CMS, we ensure a seamless and efficient development process.",
@@ -134,7 +122,7 @@ export default function ServicesSection() {
           ]
         },
         {
-          icon: "🖥️",
+          
           title: "E-commerce Solutions",
           description: "Secure, user-friendly online stores optimized for conversion and seamless customer experience.",
           longDescription: "We build powerful e-commerce platforms that drive sales and enhance customer loyalty. Our solutions are designed for security, scalability, and ease of use, providing a seamless shopping experience for your customers and efficient management tools for your business. We integrate secure payment gateways, inventory management, and analytics to give you full control over your online store.",
@@ -153,7 +141,7 @@ export default function ServicesSection() {
       categoryDescription: "Formulating data-driven strategies to ensure your digital initiatives achieve measurable business results.",
       services: [
         {
-          icon: "⚙️",
+          
           title: "Digital Strategy",
           description: "Comprehensive planning and execution to maximize your online reach and impact.",
           longDescription: "A well-defined digital strategy is vital for success in today's competitive landscape. We work with you to understand your business goals, target audience, and market landscape. Based on this, we develop tailored strategies covering SEO, content marketing, social media, and paid advertising to enhance your online visibility, drive traffic, and convert leads into loyal customers. Our approach is data-driven, ensuring measurable results and continuous optimization.",
@@ -260,15 +248,13 @@ export default function ServicesSection() {
           >
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl font-bold p-2 rounded-full transition-colors"
+              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl font-bold p-2 rounded-lg transition-colors"
               aria-label="Close modal"
             >
               &times;
             </button>
 
-            <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-6 shadow-md">
-              <span className="text-blue-600 text-3xl font-bold">{selectedService.icon}</span>
-            </div>
+            
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">{selectedService.title}</h2>
             <p className="text-md md:text-lg text-gray-700 leading-relaxed mb-8">{selectedService.longDescription}</p>
 
@@ -298,7 +284,7 @@ export default function ServicesSection() {
               className="mt-12"
             >
               {/* This link assumes you have a #contact section on your main page */}
-              <a href="#" onClick={closeModal} className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-300 shadow-lg">
+              <a href="#" onClick={closeModal} className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3 px-8 rounded-lg bg-blue-500 hover:bg-blue-600 transition-all duration-300 shadow-lg">
                 Get a Free Consultation
               </a>
             </motion.div>

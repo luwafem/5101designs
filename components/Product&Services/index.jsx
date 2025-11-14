@@ -202,7 +202,7 @@ export default function DesignShowcaseSection() {
           {/* Navigation Buttons - Now visible again and styled */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-full shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent button style
+            className="absolute left-4 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-lg shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent button style
             aria-label="Previous design"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -211,7 +211,7 @@ export default function DesignShowcaseSection() {
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-4 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-full shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent button style
+            className="absolute right-4 z-30 p-3 bg-blue-500/20 backdrop-blur-md rounded-lg shadow-lg text-white hover:bg-blue-500/40 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500/80" // Consistent button style
             aria-label="Next design"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
